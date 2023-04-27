@@ -76,7 +76,7 @@ function processRollout(rollout?: Rollout) {
 }
 
 /**
- * @internal
+ * This method should be used only by LaunchDarkly packages.
  */
 export function processFlag(flag: Flag) {
   if (flag.fallthrough && flag.fallthrough.rollout) {
@@ -99,7 +99,7 @@ export function processFlag(flag: Flag) {
 }
 
 /**
- * @internal
+ * This method should be used only by LaunchDarkly packages.
  */
 export function processSegment(segment: Segment) {
   segment?.rules?.forEach((rule) => {
