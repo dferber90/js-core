@@ -6,9 +6,9 @@ import type {
   LDFeatureStoreDataStorage,
   LDFeatureStoreItem,
   LDFeatureStoreKindData,
-  interfaces,
 } from '@launchdarkly/js-server-sdk-common-edge';
 
+// TODO: Maybe processFlag/processSegment should be in some more restricted location.
 import { processFlag, processSegment, noop } from '@launchdarkly/js-server-sdk-common-edge';
 
 interface VercelStorage {
